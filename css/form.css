@@ -1,0 +1,69 @@
+.fieldset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 0px 20px;
+}
+
+.form__legend {
+    color: #ffffff;
+    background: #003cff26;
+    border: solid 0.5px;
+    padding: 10px;
+    border-radius: 20px;
+    border-color: teal;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
+}
+
+.form__labelText {
+    display: inline-block;
+    width: 200px;
+    font-size: 18px;
+    color: white;
+    text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
+}
+
+.form__field {
+    text-align: center;
+    border: 0px;
+    padding: 5px;
+    margin: 0px;
+    width: 200px;
+    height: 20px;
+    border-radius: 10px;
+    background: rgba(66, 68, 90, 0.3);
+    color: #fff;
+}
+
+.form__field:hover,
+.form__field:focus,
+.form__field:active {
+    background: rgba(66, 68, 90, 0.7);
+}
+
+.textStyle {
+    color: #ffffff;
+    background-image: -webkit-radial-gradient(circle, #ffffff 0%, #8af0f3 100%, #ffffff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fontSize {
+    font-size: 30px;
+}
+
+.input_field {
+    background: rgba(66, 68, 90, 0.3);
+    padding: 0px 20px;
+    border-radius: 50px;
+
+}
+
+.input_field:hover {
+    background: rgba(66, 68, 90, 0.7);
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Style-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/sub-res_buttons.css" />
+
+    <!--Implementacja skryptu JS-->
+    <script defer src="js/script.js"></script>
+
+    <!--Czcionka google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&family=Prompt:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Tytuł-->
+    <title>Currency converter</title>
+  </head>
+
+  <body>
+    <div class="calculator_Box">
+      <form class="js-form">
+        <fieldset class="fieldset">
+          <legend class="form__legend textStyle">KALKULATOR WALUT</legend>
+
+          <p>
+            <label>
+              <span class="form__labelText textStyle">Wpisz kwotę*:</span>
+              <input
+                class="form__field js-inputAmount"
+                placeholder="0.00"
+                value=""
+                type="number"
+                min="0.01"
+                step="0.01"
+                required
+                autofocus
+              />
+            </label>
+          </p>
+
+          <p>
+            <label>
+              <span class="form__labelText textStyle"> Przelicz z:</span>
+              <select class="form__field js-fromCurrency" name="fromCurrency">
+                <option value="PLN" selected>PLN</option>
+                <option value="EUR">EUR</option>
+                <option value="USD">USD</option>
+                <option value="GBP">GBP</option>
+                <option value="JPY">JPY</option>
+              </select>
+            </label>
+          </p>
+
+          <p>
+            <label>
+              <span class="form__labelText textStyle">Przelicz na:</span>
+              <select class="form__field js-toCurrency" name="toCurrency">
+                <option value="PLN">PLN</option>
+                <option value="EUR" selected>EUR</option>
+                <option value="USD">USD</option>
+                <option value="GBP">GBP</option>
+                <option value="JPY">JPY</option>
+              </select>
+            </label>
+          </p>
+          
+          <p><span class="textStyle">Pola oznaczone * są wymagane!</span></p><br>
+          
+          <p class="center input_field">
+            <span class="textStyle fontSize"
+              >Kwota po przeliczeniu<br />
+              <strong class="js-result">0.00</strong></span
+            >
+          </p>
+          <br />
+
+          <div>
+            <input
+              class="submit-res__button button__size-submit js-submit"
+              type="submit"
+              value="Oblicz"
+            />
+            <br />
+            <input
+              class="submit-res__button button__size-reset"
+              type="reset"
+              value="Resetuj"
+            />
+          </div>
+        </fieldset>
+
+        <footer class="center textStyle spacing text-shadow">
+          Kursy walut aktualne na podstawie danych z<br />
+          Google Finance z dnia <strong class="textStyle">08.03.2023</strong
+          ><br /><br />
+          Copyright © 2023 Front-End Development.<br />
+          All rights reserved.
+        </footer>
+
+      </form>
+
+    </div>
+    
+  </body>
+</html>

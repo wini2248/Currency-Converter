@@ -1,0 +1,40 @@
+.submit-res__button {
+	box-shadow: inset 0px 1px 0px 0px #003cff26;
+	;
+	background: linear-gradient(to bottom, #003cff26, 5%, hsla(210, 77%, 56%, 0.1) 100%);
+	background-color: rgba(0, 60, 255, 0.15);
+	border-radius: 6px;
+	border: 1px solid #003cff26;
+	display: inline-block;
+	cursor: pointer;
+	color: white;
+	font-size: 15px;
+	padding: 6px 24px;
+}
+
+.submit-res__button:hover {
+	background: linear-gradient(to bottom, #378ee588 5%, hsla(226, 100%, 50%, 0.1), 100%);
+	background-color: hsla(210, 77%, 56%, 0.3);
+}
+
+.submit-res__button:active {
+	position: relative;
+	top: 1px;
+}
+
+.center {
+	text-align: center;
+}
+
+.button__size-submit {
+	width: 150px;
+	height: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.button__size-reset {
+	width: 150px;
+	height: 30px;
+	margin-bottom: 20px;
+}
